@@ -1,5 +1,7 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import "./App.css";
+import Container from 'react-bootstrap';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,7 +27,12 @@ class App extends React.Component {
     };
   }
   render() {
-    return <div>Projects</div>;
+    return (
+      <Router>
+        <Container ClassName="p-0" fluid={true}>
+      </Container>
+      </Router>
+    )
   }
 }
 
