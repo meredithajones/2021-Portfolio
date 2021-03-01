@@ -33,13 +33,13 @@ class App extends React.Component {
       <Router>
         <Container ClassName="p-0" fluid={true}>
 
-      <Navbar className="border-bottom">
+      <Navbar className="border-bottom" bg= "transparent" expand="lg">
       <Navbar.Brand>
         Meredith Jones
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="navnar-toggle" />
+      <Navbar.Toggle ClassName="border-0" aria-controls="navnar-toggle" />
       <Navbar.Collapse id="navbar.toggle">
-      <Nav>
+      <Nav className="ml-auto">
       <Link className="nav-link" to="/">Home</Link>
       <Link className="nav-link" to="/">About Me</Link>
       <Link className="nav-link" to="/">Contact</Link>
