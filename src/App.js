@@ -6,7 +6,9 @@ import Nav from 'react-bootstrap/Nav';
 import './App.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 
+//Internal imports
 import Footer from './Components/Footer'
+import HomePage from './Pages/HomePage'
 
 
 class App extends React.Component {
@@ -48,6 +50,7 @@ class App extends React.Component {
       <Link className="nav-link" to="/">About Me</Link>
       <Link className="nav-link" to="/">Contact</Link>
 
+        <Route path="/" exact render= {() => <HomePage title= {this.state.home.title} />} />
       </Nav>
       </Navbar.Collapse>
       </Navbar>
