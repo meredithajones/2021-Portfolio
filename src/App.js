@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
+
 
 class App extends React.Component {
   constructor(props) {
@@ -35,7 +37,8 @@ class App extends React.Component {
 
       <Navbar className="border-bottom" bg= "transparent" expand="lg">
       <Navbar.Brand>
-        Meredith Jones
+      <h3>  <FaLinkedin /> <FaGithub /> Meredith Jones  </h3>
+        {/* < GoMarkGithub /> ?  */}
       </Navbar.Brand>
       <Navbar.Toggle ClassName="border-0" aria-controls="navnar-toggle" />
       <Navbar.Collapse id="navbar.toggle">
