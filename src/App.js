@@ -50,11 +50,13 @@ class App extends React.Component {
       <Link className="nav-link" to="/">About Me</Link>
       <Link className="nav-link" to="/">Contact</Link>
 
-        <Route path="/" exact render= {() => <HomePage title= {this.state.home.title} />} />
+ 
       </Nav>
       </Navbar.Collapse>
       </Navbar>
-
+      <Route path="/" exact render= {() => <HomePage title= {this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
+      <Route path="/" exact render= {() => <HomePage title= {this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
+      <Route path="/" exact render= {() => <HomePage title= {this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text}/>} />
       <Footer />
 
       </Container>
