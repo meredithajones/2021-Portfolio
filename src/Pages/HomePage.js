@@ -5,7 +5,7 @@ import Hero from '../Components/Hero';
 function HomePage(props) {
 
     return(
-        <Hero />
+        <Hero title={'hey'}/>
     );
 
 }
