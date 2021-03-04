@@ -18,8 +18,8 @@ code {
 
 .m-card-image{
   border-radius: 10px;
-  width: 30px;
-  height: 480px;
+  width: 480px;
+  height: 250px;
   box-shadow: 0px 0px 3px 1px #ccc
 }
 

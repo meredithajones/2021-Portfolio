@@ -26,7 +26,7 @@ class App extends React.Component {
       ],
       home: {
         title: "Creating Beautiful Online Spaces",
-        subTitle: "Coding for the greater good",
+        subTitle: "Take a look at a few of my recent projects below",
         greeting: "Take a look at a few of my projects below",
       },
       about: {
@@ -46,8 +46,8 @@ class App extends React.Component {
             <Navbar.Brand>
               <h3>
                 {" "}
-                <FaLinkedin /> <FaGithub />
                 Meredith Jones
+                <FaLinkedin /> <FaGithub />
               </h3>
             </Navbar.Brand>
 
