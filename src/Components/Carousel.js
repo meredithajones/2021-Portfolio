@@ -1,4 +1,7 @@
 import React from 'react';
+import Card from "react-bootstrap/Card";
+
+import ffa from '../assets/images/ffa.gif';
 
 class Carousel extends React.Component {
 
@@ -8,25 +11,35 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: '',
-                    subTitle: '',
-                    imgSrc: ,
-                    link: '',
+                    title: 'Fridge For All',
+                    subTitle: 'A collaboration to create an inventory system for community fridges in Phialdelphia' ,
+                    imgSrc: ffa ,
+                    deployedLink: 'https://fridge-for-all-philly.herokuapp.com/',
+                    githubLink: 'https://github.com/meredithajones/Fridge_For_All',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: '',
+                    title: 'Note Taking Application',
                     subTitle: '',
-                    imgSrc: ,
+                    imgSrc: '',
                     link: '',
                     selected: false
                 },
                 {
                     id: 2,
-                    title: '',
+                    title: 'Daily Work Day Scheduling Application',
                     subTitle: '',
-                    imgSrc: ,
+                    imgSrc: '',
+                    link: '',
+                    selected: false
+                },
+
+                {
+                    id: 3,
+                    title: 'Employee Directory',
+                    subTitle: '',
+                    imgSrc: '',
                     link: '',
                     selected: false
                 },
