@@ -1,7 +1,9 @@
 import React from 'react';
-import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 import ffa from '../assets/images/ffa.gif';
+import Card from './Card';
 
 class Carousel extends React.Component {
 
@@ -72,11 +74,16 @@ class Carousel extends React.Component {
         })
     }
     
-    render(){
+    render() {
         return(
-            <p>Carousel Works!</p>
+            <Container fluid={true}>
+                <Row className="justify-content-around">
+                    {this.makeItems(this.state.items)}
+                </Row>
+            </Container>
         );
     }
+
 }
 
 export default Carousel;
