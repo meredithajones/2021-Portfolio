@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 import ffa from '../assets/images/ffa.gif';
+import note from '../assets/images/note_taker.gif';
 import Card from './Card';
 
 class Carousel extends React.Component {
@@ -14,7 +15,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'Fridge For All',
-                    subTitle: 'A collaboration to create an inventory system for community fridges in Phialdelphia' ,
+                    subTitle: 'A collaborative project creating an inventory tracking \n system for community fridges in Phialdelphia' ,
                     imgSrc: ffa ,
                     link: 'https://fridge-for-all-philly.herokuapp.com/',
                     gitLink: 'https://github.com/meredithajones/Fridge_For_All',
@@ -23,10 +24,10 @@ class Carousel extends React.Component {
                 {
                     id: 1,
                     title: 'Note Taking Application',
-                    subTitle: '',
-                    imgSrc: '',
-                    link: '',
-                    gitLink: '',
+                    subTitle: 'An app for users to store and delete notes',
+                    imgSrc: note ,
+                    link: 'https://boiling-citadel-67370.herokuapp.com/',
+                    gitLink: 'https://github.com/meredithajones/note_taking_app',
                     selected: false
                 },
                 {
