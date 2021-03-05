@@ -16,8 +16,8 @@ class Carousel extends React.Component {
                     title: 'Fridge For All',
                     subTitle: 'A collaboration to create an inventory system for community fridges in Phialdelphia' ,
                     imgSrc: ffa ,
-                    deployedLink: 'https://fridge-for-all-philly.herokuapp.com/',
-                    githubLink: 'https://github.com/meredithajones/Fridge_For_All',
+                    link: 'https://fridge-for-all-philly.herokuapp.com/',
+                    gitLink: 'https://github.com/meredithajones/Fridge_For_All',
                     selected: false
                 },
                 {
@@ -26,6 +26,7 @@ class Carousel extends React.Component {
                     subTitle: '',
                     imgSrc: '',
                     link: '',
+                    gitLink: '',
                     selected: false
                 },
                 {
@@ -34,6 +35,7 @@ class Carousel extends React.Component {
                     subTitle: '',
                     imgSrc: '',
                     link: '',
+                    gitLink: '',
                     selected: false
                 },
 
@@ -43,6 +45,7 @@ class Carousel extends React.Component {
                     subTitle: '',
                     imgSrc: '',
                     link: '',
+                    gitLink: '',
                     selected: false
                 },
             ]
