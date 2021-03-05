@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 
 import ffa from '../assets/images/ffa.gif';
 import note from '../assets/images/note_taker.gif';
+import work from '../assets/images/fitness_tracker.gif';
 import Card from './Card';
 
 class Carousel extends React.Component {
@@ -32,21 +33,21 @@ class Carousel extends React.Component {
                 },
                 {
                     id: 2,
-                    title: 'Daily Work Day Scheduling Application',
-                    subTitle: '',
-                    imgSrc: '',
-                    link: '',
-                    gitLink: '',
+                    title: 'Fitness Tracker Application',
+                    subTitle: 'An app for users to keep track of the type and duration of workouts',
+                    imgSrc: work ,
+                    link: 'https://morning-reef-44056.herokuapp.com/?id=6022f139e7cfc80015cd1c9b',
+                    gitLink: 'https://github.com/meredithajones/get_fit',
                     selected: false
                 },
 
                 {
                     id: 3,
                     title: 'Employee Directory',
-                    subTitle: '',
-                    imgSrc: '',
-                    link: '',
-                    gitLink: '',
+                    subTitle: 'A directory app to create an easy way for users to search for fellow staff members',
+                    imgSrc: dir ,
+                    link: 'https://meredithajones.github.io/Employee_Directory/',
+                    gitLink: 'https://github.com/meredithajones/Employee_Directory',
                     selected: false
                 },
             ]
