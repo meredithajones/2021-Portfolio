@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import ffa from '../assets/images/ffa.gif';
 import note from '../assets/images/note_taker.gif';
 import work from '../assets/images/fitness_tracker.gif';
+import dir from '../assets/images/staff_directory.gif';
 import Card from './Card';
 
 class Carousel extends React.Component {
