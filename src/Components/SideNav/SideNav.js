@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../SideNav/SideNav.css";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -7,7 +8,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SideNav = () => {
     return (
-        <nav className="sidenav">
+        <nav className="SideNav">
             <a href="https://www.linkedin.com/in/meredithjones4747/" target="_blank" rel="noreferrer">
                 <i className=""><FaLinkedin /></i>
             </a>
