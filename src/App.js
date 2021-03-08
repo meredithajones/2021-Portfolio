@@ -4,9 +4,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./App.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-// import Col from 'react-bootstrap/Col';
-// import Row from 'react-bootstrap/Row';
+
 
 //Internal imports
 import Footer from "./Components/Footer";
@@ -15,6 +13,9 @@ import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import Sidenav from "./Components/SideNav/SideNav.js";
 
+<div style={{ backgroundImage: "url(/background.jpg)" }}>
+  Hello World
+</div>
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -48,7 +49,6 @@ class App extends React.Component {
               <h3>
                 {" "}
                 Meredith Jones
-                <FaLinkedin /> <FaGithub />
               </h3>
             </Navbar.Brand>
 
@@ -68,6 +68,7 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
           <Sidenav />
+          
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
@@ -75,6 +76,7 @@ class App extends React.Component {
           <Footer />
         </Container>
       </Router>
+      
     );
   }
 }
