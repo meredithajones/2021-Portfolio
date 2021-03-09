@@ -12,10 +12,8 @@ import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import Sidenav from "./Components/SideNav/SideNav.js";
+import backGImage from "./Components/Background/backgroundImage";
 
-<div style={{ backgroundImage: "url(/background.jpg)" }}>
-  Hello World
-</div>
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -43,8 +41,9 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <backGImage />
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar className="border-bottom" expand="lg">
             <Navbar.Brand>
               <h3>
                 {" "}

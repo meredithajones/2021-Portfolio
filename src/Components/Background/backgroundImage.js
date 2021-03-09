@@ -2,9 +2,8 @@ import React from 'react';
 import backgroundImage from "../Background/background.jpg";
 
 const backGImage = () => {
-    // Render main bg image
     return (
-        <img className="" src={ backgroundImage } alt=""></img>
+        <img className="bg_image" src={ backgroundImage } alt="An abstract watercolor design in the background"></img>
      );
 }
  
