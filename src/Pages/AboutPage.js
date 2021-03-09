@@ -1,9 +1,14 @@
 import { React } from 'react';
+import Hero from "../Components/Hero";
 
 function AboutPage(props) {
 
     return(
-        <p>AboutPage Works!</p>
+      
+       <div>
+        <Hero title={props.title} />
+       </div>
+       
     );
 
 }
