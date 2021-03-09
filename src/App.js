@@ -7,7 +7,7 @@ import "./App.css";
 
 
 //Internal imports
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
