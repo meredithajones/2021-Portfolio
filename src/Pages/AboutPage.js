@@ -1,5 +1,6 @@
 import { React } from 'react';
 import Hero from "../Components/Hero";
+import Content from "../Components/Content";
 
 function AboutPage(props) {
 
@@ -7,6 +8,10 @@ function AboutPage(props) {
       
        <div>
         <Hero title={props.title} />
+
+        <Content className="bio">
+            Hello I'm Meredith, a web developer based in Philadelphia. 
+        </Content>
        </div>
        
     );

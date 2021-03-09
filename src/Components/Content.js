@@ -4,10 +4,10 @@ import { Col, Container, Row } from 'react-bootstrap';
 function Content(props) {
 
     return(
-        <Container>
-            <Row>
-                <Col>
-                
+        <Container fluid={true}>
+            <Row className="justify-content-center">
+                <Col md={8}>
+                {props.children}
                 </Col>
             </Row>
         </Container>
