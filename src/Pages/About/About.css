@@ -9,3 +9,9 @@
     color: rgb(29, 29, 66);
     font-weight: bolder;
   }
+
+  .bioPic{
+    max-height:50%;
+    max-width: 50%;
+    
+  }

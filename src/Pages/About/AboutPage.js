@@ -3,17 +3,22 @@ import Hero from "../../Components/Hero";
 import Content from "../../Components/Content";
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 
 import "../About/About.css";
+import me from "../About/me.jpg";
 
 function AboutPage(props) {
 
     return(
-      
+    
        <div>
-        <Hero title={props.title} />
+        <Hero title={props.title}  />
+        <div img src= "../About/me.jpg"></div>
 
         <Content >
+            <Card.Img className="bioPic" src= {me}></Card.Img>
+        
             <div className= "bio">
             <p>Hello I'm Meredith, a web developer based in Philadelphia.</p>
            
