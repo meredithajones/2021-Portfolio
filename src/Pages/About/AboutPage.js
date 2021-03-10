@@ -18,12 +18,14 @@ function AboutPage(props) {
 
         <Content >        
             <div className= "bio">
+ 
             <p>Hello I'm Meredith, a web developer based in Philadelphia.</p>
+            
             <Card.Img className="bioPic" d-flex src= {me}></Card.Img> <p>I love expressing my creativity in the applications that I build. </p>
             <p>My background includes an intensive full-stack coding education through 
                 the University of Pennsylvania's College of Liberal and Professional Studies.
             </p>
-
+            <br></br>
             <p>Skills include:</p>
             <Row className="border-top justify-content-between p-2">
             <Col className='p-0' md={3} sm={12} >

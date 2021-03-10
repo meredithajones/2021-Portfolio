@@ -13,5 +13,8 @@
   .bioPic{
     max-height:50%;
     max-width: 50%;
+    float: left;
+    margin: 15px;
+    margin-block-end: 5px;
     
   }
