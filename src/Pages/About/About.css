@@ -4,4 +4,8 @@
     width: 900px;
     padding: 50px;
     margin: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:27px;
+    color: rgb(29, 29, 66);
+    font-weight: bolder;
   }
