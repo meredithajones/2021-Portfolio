@@ -16,13 +16,10 @@ function AboutPage(props) {
         <Hero title={props.title}  />
         <div img src= "../About/me.jpg"></div>
 
-        <Content >
-            <Card.Img className="bioPic" src= {me}></Card.Img>
-        
+        <Content >        
             <div className= "bio">
             <p>Hello I'm Meredith, a web developer based in Philadelphia.</p>
-           
-            <p>I love expressing my creativity in the applications that I build. </p>
+            <Card.Img className="bioPic" d-flex src= {me}></Card.Img> <p>I love expressing my creativity in the applications that I build. </p>
             <p>My background includes an intensive full-stack coding education through 
                 the University of Pennsylvania's College of Liberal and Professional Studies.
             </p>
