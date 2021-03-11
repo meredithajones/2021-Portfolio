@@ -16,7 +16,7 @@ function Footer() {
                     <Col className='p-0' md={3} sm={12} >
                     Meredith Jones 2021
                     </Col>
-                    <Col className="p-0" d-flex justify-content-end md={3}>
+                    <Col className="p-0" d-flex justify-content-end md={2}>
                     Site created using React <FaReact />
                     </Col>
 
