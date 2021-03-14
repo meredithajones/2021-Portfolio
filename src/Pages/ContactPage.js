@@ -29,6 +29,16 @@ class ContactPage extends React.Component {
         })
     }
     
+    //Setting up prevent default to stop page refresh on submit
+        handleSubmit = (event) => {
+            event.preventDefault();
+
+            //Preventing multiple email submissions
+            this.setState({
+                disabled: true
+            });
+        }
+    
 
     render() {
         return(
