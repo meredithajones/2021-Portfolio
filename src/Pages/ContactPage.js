@@ -16,6 +16,18 @@ class ContactPage extends React.Component {
             emailSent: null,
         }
     }
+    //Creating functions to handle events
+    handleChange = (event) => {
+        console.log(event);
+
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name] : value
+        })
+    }
     
 
     render() {
@@ -24,8 +36,8 @@ class ContactPage extends React.Component {
             <Hero title={this.props.title} />
 
             <Content>
-                <Form>
-                    <Form.Group>
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group> 
                         <Form.Label htmlFor="full-name">
                             Full Name
                         </Form.Label>
