@@ -36,7 +36,7 @@ class ContactPage extends React.Component {
             //Preventing multiple email submissions
             this.setState({
                 disabled: true,
-                emailSent: false
+                emailSent: true,
             });
         }
     
