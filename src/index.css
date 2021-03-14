@@ -58,3 +58,17 @@ code {
   font-weight: bold;
   font-display: bold;
 }
+
+.success-msg{
+  color:rgb(70, 46, 177);
+  padding: 10px 15px;
+  font-weight: bold;
+  font-display: bold;
+}
+
+.err-msg{
+  color:rgb(219, 54, 54);
+  padding: 10px 15px;
+  font-weight: bold;
+  font-display: bold;
+}
