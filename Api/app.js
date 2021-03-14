@@ -26,6 +26,12 @@ app.get('/api', (req, res, next ) => {
 app.post('/api/email', (req, res, next) => {
 
     sendGrid.setApiKey('');
+        const msg= {
+            to: 'mjonesp@gmail.com',
+            from: req.body.email,
+            subject:'Website Contact',
+            text: req.body.message
+        }
 });
 
 //setting up app to run on local host port 3030
