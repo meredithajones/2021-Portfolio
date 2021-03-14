@@ -23,6 +23,11 @@ app.get('/api', (req, res, next ) => {
     res.send('API Status: Running')
 });
 
+app.post('/api/email', (req, res, next) => {
+
+    sendGrid.setApiKey('');
+});
+
 //setting up app to run on local host port 3030
 app.listen(3030, '0.0.0.0');
 console.log ('App is running on Port 3030!');
