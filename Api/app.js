@@ -32,6 +32,26 @@ app.post('/api/email', (req, res, next) => {
             subject:'Website Contact',
             text: req.body.message
         }
+
+    sendGrid.send(msg)
+    .then(result => {
+
+        res.status(200).json    
+            success: true
+
+    });
+
+})
+
+    .catch(err => {
+
+        console.log('error:', err);
+        res.status(401).json({
+            success: false
+        });
+
+    });
+
 });
 
 //setting up app to run on local host port 3030
