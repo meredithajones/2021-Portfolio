@@ -25,7 +25,7 @@ app.get('/api', (req, res, next ) => {
 
 app.post('/api/email', (req, res, next) => {
 
-    sendGrid.setApiKey('');
+    sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
         const msg= {
             to: 'mjonesp@gmail.com',
             from: req.body.email,
@@ -33,8 +33,9 @@ app.post('/api/email', (req, res, next) => {
             text: req.body.message
         }
 
-    sendGrid.send(msg)
+    sgMail.send(msg)
     .then(result => {
+        console.log('Email Sent')
 
         res.status(200).json    
             success: true

@@ -4,6 +4,8 @@ import Content from '../Components/Content';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+import axios from 'axios';
+
 
 class ContactPage extends React.Component {
     constructor(props) {
@@ -38,6 +40,20 @@ class ContactPage extends React.Component {
                 disabled: true,
                 emailSent: true,
             });
+            axios.post('/api/email' , this.state)
+                .then(res => {
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    });
+                })
+                .catch(err => {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false
+                    });
+                }
+                    )
         }
     
 
