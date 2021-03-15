@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 //Cross Origin Resource Sharing
 const cors = require('cors');
-const sendGrid = require('@sendgrid/mail');
+const sgMail = require('@sendgrid/mail');
 
 const app = express();
 
@@ -24,36 +24,34 @@ app.get('/api', (req, res, next ) => {
 });
 
 app.post('/api/email', (req, res, next) => {
+        console.log(req.body);
 
-    sendGrid.setApiKey(process.env.SENDGRID_API_KEY);
-        const msg= {
+        sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+        const msg = {
             to: 'mjonesp@gmail.com',
-            from: req.body.email,
+            from: req.body.email ,
             subject:'Website Contact',
-            text: req.body.message
+            text: req.body.message ,
         }
 
-    sgMail.send(msg)
-    .then(result => {
-        console.log('Email Sent')
+        sgMail.send(msg)
+        .then(result => {
 
-        res.status(200).json    
-            success: true
+            res.status(200).json({
+                success: true
+            });
 
-    });
+        })
+        .catch(err => {
 
-})
+            console.log('error: ', err);
+            res.status(401).json({
+                success: false
+            });
 
-    .catch(err => {
-
-        console.log('error:', err);
-        res.status(401).json({
-            success: false
         });
-
-    });
-
 });
+
 
 //setting up app to run on local host port 3030
 app.listen(3030, '0.0.0.0');

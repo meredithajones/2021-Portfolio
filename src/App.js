@@ -34,6 +34,7 @@ class App extends React.Component {
       },
       contact: {
         title: "Get In Touch",
+        subTitle: "Download my resume" ,
       },
     };
   }
