@@ -1,5 +1,5 @@
 import React from 'react';
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCaptcha from '../Components/ReCaptcha.js';
 
 // import Hero from '../Components/Hero';
 // import Content from '../Components/Content';
@@ -45,10 +45,15 @@ export default function ContactUs() {
                         </div>
                         <div className="col-8 pt-3 mx-auto">
                             <input type="submit" className="btn btn-info" value="Send Message"></input>
+
+
                         </div>
                     </div>
+                    
                 </form>
             </div>
         </div>
     )
 }
+
+      

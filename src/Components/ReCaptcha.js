@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ReCaptcha } from 'react-recaptcha-google'
+import ReCAPTCHA from "react-google-recaptcha";
 class reCaptchaComponent extends Component {
   constructor(props, context) {
     super(props, context);
@@ -26,7 +26,7 @@ render() {
     return (
       <div>
         {/* You can replace captchaDemo with any ref word */}
-        <ReCaptcha
+        <ReCAPTCHA
             ref={(el) => {this.captcha = el;}}
             size="compact"
             render="explicit"
