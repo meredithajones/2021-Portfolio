@@ -64,11 +64,13 @@ class App extends React.Component {
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link> */}
+                  <Route exact path="/" component={HomePage} />
+                  <Route exact path="/about" component={AboutPage} />
+                  <Route exact path="/contact" component={ContactPage} /> 
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Sidenav />
-          
+          <Sidenav />  
           <Route exact path="/home" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route exact path="/about" render={() => <AboutPage title={this.state.about.title} />} />
           <Route exact path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
