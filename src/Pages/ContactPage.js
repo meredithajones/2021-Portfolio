@@ -1,7 +1,6 @@
 import React from 'react';
 import ReCaptcha from '../Components/ReCaptcha.js';
-
-// import Hero from '../Components/Hero';
+import Hero from '../Components/Hero';
 // import Content from '../Components/Content';
 // import Form from 'react-bootstrap/Form';
 // import Button from 'react-bootstrap/Button';
@@ -11,7 +10,9 @@ import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init("user_rMuPcHScdQ7joaXqMmqZr");
 
-export default function ContactUs() {
+
+function ContactUs(props) {
+
 
         function sendEmail(e) {
             e.preventDefault();
@@ -23,10 +24,12 @@ export default function ContactUs() {
             console.log(error.text);
         });
         e.target.reset()
-    }
+    };
 
-
+   
     return(
+
+       <div> <Hero title = 'Get In Touch' /> 
         <div>
             <div className="container">
             <form onSubmit={sendEmail}>
@@ -53,7 +56,14 @@ export default function ContactUs() {
                 </form>
             </div>
         </div>
-    )
-}
+    </div>
+       
+     )
+    }
+
+
+
+    export default ContactUs;
+
 
       
