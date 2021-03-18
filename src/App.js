@@ -55,7 +55,7 @@ class App extends React.Component {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar.toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/home">
                   Home
                 </Link>
                 <Link className="nav-link" to="/about">
@@ -69,7 +69,7 @@ class App extends React.Component {
           </Navbar>
           <Sidenav />
           
-          <Route exact path="/" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route exact path="/home" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route exact path="/about" render={() => <AboutPage title={this.state.about.title} />} />
           <Route exact path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
           <Footer />
