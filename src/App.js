@@ -13,6 +13,7 @@ import AboutPage from "./Pages/About/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import Sidenav from "./Components/SideNav/SideNav.js";
 import backGImage from "./Components/Background/backgroundImage";
+import NewContactPage from "./Pages/NewContactPage/NewContactPage";
 
 class App extends React.Component {
   constructor(props) {

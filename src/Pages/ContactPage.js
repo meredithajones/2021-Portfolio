@@ -1,11 +1,13 @@
 import React from 'react';
 import ReCaptcha from '../Components/ReCaptcha.js';
 import Hero from '../Components/Hero';
-import Message from '../Components/Message';
+import { ToastContainer, toast , Zoom } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import '../Pages/ContactPage.css';
 
 // import Content from '../Components/Content';
 // import Form from 'react-bootstrap/Form';
-// import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
 
 // import Axios from 'axios';
 import emailjs from 'emailjs-com';
@@ -17,6 +19,31 @@ init("user_rMuPcHScdQ7joaXqMmqZr");
 
 function ContactMe() {
 
+    const toastifySuccess = () => {
+        toast('Thanks for your email! I will get right back to you', {
+          position: 'bottom-right',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          className: 'submit-feedback success',
+          toastId: 'notifyToast'
+        });
+      };
+
+      const toastifyError = () => {
+        toast('Oh no! Something went wrong. Please reach out directly at meredithjonesp@gmail.com', {
+          position: 'bottom-right',
+          autoClose: 5000,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: false,
+          className: 'submit-feedback success',
+          toastId: 'notifyToast'
+        });
+      };
 
 
         function sendEmail(e) {
@@ -25,12 +52,13 @@ function ContactMe() {
         emailjs.sendForm('service_zimcbdw', 'template_e90bbd3', e.target, 'user_rMuPcHScdQ7joaXqMmqZr')
         .then((result) => {
             console.log(result.text);
-          <Message />
+            toastifySuccess();
+            
+              
 
         },  (error) => {
             console.log(error.text);
-            return('Sorry, email is not sending. Please get in touch directly at: meredithjonesp@gmail.com')
-
+            toastifyError();
         });
         e.target.reset()
     };
@@ -60,16 +88,14 @@ function ContactMe() {
                            
                         </div>
                     </div>
-                    
                 </form>
             </div>
+            <ToastContainer />
         </div>
     </div>
        
      )
     }
-
-
 
 
     export default ContactMe;
