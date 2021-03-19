@@ -1,6 +1,8 @@
 import React from 'react';
 import ReCaptcha from '../Components/ReCaptcha.js';
 import Hero from '../Components/Hero';
+import Message from '../Components/Message';
+
 // import Content from '../Components/Content';
 // import Form from 'react-bootstrap/Form';
 // import Button from 'react-bootstrap/Button';
@@ -11,7 +13,10 @@ import{ init } from 'emailjs-com';
 init("user_rMuPcHScdQ7joaXqMmqZr");
 
 
-function ContactUs(props) {
+
+
+function ContactMe() {
+
 
 
         function sendEmail(e) {
@@ -20,8 +25,12 @@ function ContactUs(props) {
         emailjs.sendForm('service_zimcbdw', 'template_e90bbd3', e.target, 'user_rMuPcHScdQ7joaXqMmqZr')
         .then((result) => {
             console.log(result.text);
-        }, (error) => {
+          <Message />
+
+        },  (error) => {
             console.log(error.text);
+            return('Sorry, email is not sending. Please get in touch directly at: meredithjonesp@gmail.com')
+
         });
         e.target.reset()
     };
@@ -48,8 +57,7 @@ function ContactUs(props) {
                         </div>
                         <div className="col-8 pt-3 mx-auto">
                             <input type="submit" className="btn btn-info" value="Send Message"></input>
-
-
+                           
                         </div>
                     </div>
                     
@@ -63,7 +71,8 @@ function ContactUs(props) {
 
 
 
-    export default ContactUs;
+
+    export default ContactMe;
 
 
       
