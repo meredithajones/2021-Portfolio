@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import "../SideNav/SideNav.css";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin,  } from "react-icons/fa";
 
 
 

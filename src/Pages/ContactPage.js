@@ -4,6 +4,7 @@ import Hero from '../Components/Hero';
 import { ToastContainer, toast , Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Pages/ContactPage.css';
+import { FaFileDownload  } from "react-icons/fa";
 
 // import Content from '../Components/Content';
 // import Form from 'react-bootstrap/Form';

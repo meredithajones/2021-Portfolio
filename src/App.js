@@ -12,8 +12,8 @@ import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/About/AboutPage";
 import ContactPage from "./Pages/ContactPage";
 import Sidenav from "./Components/SideNav/SideNav.js";
-import backGImage from "./Components/Background/backgroundImage";
-import NewContactPage from "./Pages/NewContactPage/NewContactPage";
+import MyResume from "./Components/Resume/meredith_jones_resume.pdf";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -24,6 +24,7 @@ class App extends React.Component {
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
         { title: "Contact", path: "/contact" },
+        { title: "Resume", path: "/resume" },
       ],
       home: {
         title: "Meredith Jones Creating Beautiful Online Spaces",
@@ -65,9 +66,10 @@ class App extends React.Component {
                 <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
-                  {/* <Route exact path="/" component={HomePage} />
-                  <Route exact path="/about" component={AboutPage} />
-                  <Route exact path="/contact" component={ContactPage} />  */}
+                <a className="nav-link" href={MyResume} target="_blank" rel="noopener noreferrer">
+                  Resume
+                </a>
+                
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -75,6 +77,8 @@ class App extends React.Component {
           <Route exact path="/home" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route exact path="/about" render={() => <AboutPage title={this.state.about.title} />} />
           <Route exact path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route exact path="/resume" render={() => <MyResume />} />
+
           <Footer />
         </Container>
       </Router>
