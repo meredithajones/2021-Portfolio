@@ -4,13 +4,7 @@ import Hero from '../Components/Hero';
 import { ToastContainer, toast , Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Pages/ContactPage.css';
-import { FaFileDownload  } from "react-icons/fa";
 
-// import Content from '../Components/Content';
-// import Form from 'react-bootstrap/Form';
-import Alert from 'react-bootstrap/Alert';
-
-// import Axios from 'axios';
 import emailjs from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init("user_rMuPcHScdQ7joaXqMmqZr");
@@ -56,7 +50,6 @@ function ContactMe() {
             toastifySuccess();
             
               
-
         },  (error) => {
             console.log(error.text);
             toastifyError();
@@ -86,7 +79,6 @@ function ContactMe() {
                         </div>
                         <div className="col-8 pt-3 mx-auto">
                             <input type="submit" className="btn btn-info" value="Send Message"></input>
-                           
                         </div>
                     </div>
                 </form>
