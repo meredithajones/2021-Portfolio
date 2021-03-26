@@ -79,10 +79,10 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
           <Sidenav />  
-          <Link to="/home/" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          <Link to="/about/" render={() => <AboutPage title={this.state.about.title} />} />
-          <Link to="/contact/" render={() => <ContactPage title={this.state.contact.title} />} />
-          <Link to="/resume/" render={() => <MyResume />} />
+          <Route exact path ="/home" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route exact path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+          <Route exact path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Route exact path="/resume" render={() => <MyResume />} />
 
           <Footer />
         </Container>
