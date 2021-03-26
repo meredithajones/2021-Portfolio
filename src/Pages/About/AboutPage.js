@@ -21,7 +21,8 @@ function AboutPage(props) {
  
             <p>Hello I'm Meredith, a web developer based in Philadelphia.</p>
             
-            <Card.Img className="bioPic" d-flex src= {me}></Card.Img> <p>I love expressing my creativity in the applications that I build. </p>
+            <Card.Img className="bioPic" d-flex src= {me}></Card.Img> <p> MERN proficient, happiest working in the front-end world. </p>
+            <p>I love expressing my creativity in the applications that I build. </p>
             <p>My background includes an intensive full-stack coding education through 
                 the University of Pennsylvania's College of Liberal and Professional Studies.
             </p>

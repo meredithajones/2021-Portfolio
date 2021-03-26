@@ -43,7 +43,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <backGImage />
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" expand="lg">
@@ -74,14 +74,14 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
           <Sidenav />  
-          <Route exact path="/home" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          <Route exact path="/about" render={() => <AboutPage title={this.state.about.title} />} />
-          <Route exact path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
-          <Route exact path="/resume" render={() => <MyResume />} />
+          <Link to="/home/" render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Link to="/about/" render={() => <AboutPage title={this.state.about.title} />} />
+          <Link to="/contact/" render={() => <ContactPage title={this.state.contact.title} />} />
+          <Link to="/resume/" render={() => <MyResume />} />
 
           <Footer />
         </Container>
-      </Router>
+      </BrowserRouter>
       
     );
   }
