@@ -1,12 +1,5 @@
 import React from "react";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
-
-// import {
-//   BrowserRouter as 
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
