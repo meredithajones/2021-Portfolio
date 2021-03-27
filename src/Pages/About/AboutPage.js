@@ -18,7 +18,7 @@ function AboutPage(props) {
 
         <Content >        
             <div className= "bio">
- 
+
             <p>Hello I'm Meredith, a web developer based in Philadelphia.</p>
             
             <Card.Img className="bioPic" d-flex src= {me}></Card.Img> <p> MERN proficient, happiest working in the front-end world. </p>
